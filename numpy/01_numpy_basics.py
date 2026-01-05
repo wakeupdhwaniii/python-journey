@@ -1,12 +1,23 @@
 import numpy as np
 
+# 1D array
 arr = np.array([1, 2, 3, 4, 5])
-print("Array:", arr)
-print("Mean:", arr.mean())
+print("arr:", arr)
+print("dtype:", arr.dtype)
+print("shape:", arr.shape)
 
-mat = np.array([[1, 2], [3, 4]])
-print("Matrix:\n", mat)
-print("Transpose:\n", mat.T)
+# math
+print("mean:", arr.mean())
+print("sum:", arr.sum())
+print("min/max:", arr.min(), arr.max())
 
-# Boolean masking
-print("Values > 2:", arr[arr > 2])
+# create arrays
+zeros = np.zeros(5)
+ones = np.ones(5)
+arange = np.arange(0, 10, 2)
+linspace = np.linspace(0, 1, 5)
+
+print("zeros:", zeros)
+print("ones:", ones)
+print("arange:", arange)
+print("linspace:", linspace)
